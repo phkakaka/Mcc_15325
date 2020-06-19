@@ -1,0 +1,862 @@
+[p LITE_MODE AUTOSTATIC PIC14 PIC14E ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 16F15325 ]
+[d frameptr 6 ]
+"67 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/examples/i2c1_master_example.c
+[e E92 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"68
+[e E97 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+"146 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/i2c1_master.c
+[e E7816 . `uc
+I2C1_IDLE 0
+I2C1_SEND_ADR_READ 1
+I2C1_SEND_ADR_WRITE 2
+I2C1_TX 3
+I2C1_RX 4
+I2C1_RCEN 5
+I2C1_TX_EMPTY 6
+I2C1_SEND_RESTART_READ 7
+I2C1_SEND_RESTART_WRITE 8
+I2C1_SEND_RESTART 9
+I2C1_SEND_STOP 10
+I2C1_RX_ACK 11
+I2C1_RX_NACK_STOP 12
+I2C1_RX_NACK_RESTART 13
+I2C1_RESET 14
+I2C1_ADDRESS_NACK 15
+]
+"165
+[e E97 . `uc
+I2C1_STOP 1
+I2C1_RESTART_READ 2
+I2C1_RESTART_WRITE 3
+I2C1_CONTINUE 4
+I2C1_RESET_LINK 5
+]
+[e E92 . `uc
+I2C1_NOERR 0
+I2C1_BUSY 1
+I2C1_FAIL 2
+]
+"191
+[e E7834 . `uc
+I2C1_DATA_COMPLETE 0
+I2C1_WRITE_COLLISION 1
+I2C1_ADDR_NACK 2
+I2C1_DATA_NACK 3
+I2C1_TIMEOUT 4
+I2C1_NULL 5
+]
+"97 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[e E7698 . `uc
+TMR2_ROP_STARTS_TMRON 0
+TMR2_ROP_STARTS_TMRON_ERSHIGH 1
+TMR2_ROP_STARTS_TMRON_ERSLOW 2
+TMR2_ROP_RESETS_ERSBOTHEDGE 3
+TMR2_ROP_RESETS_ERSRISINGEDGE 4
+TMR2_ROP_RESETS_ERSFALLINGEDGE 5
+TMR2_ROP_RESETS_ERSLOW 6
+TMR2_ROP_RESETS_ERSHIGH 7
+TMR2_OS_STARTS_TMRON 8
+TMR2_OS_STARTS_ERSRISINGEDGE 9
+TMR2_OS_STARTS_ERSFALLINGEDGE 10
+TMR2_OS_STARTS_ERSBOTHEDGE 11
+TMR2_OS_STARTS_ERSFIRSTRISINGEDGE 12
+TMR2_OS_STARTS_ERSFIRSTFALLINGEDGE 13
+TMR2_OS_STARTS_ERSRISINGEDGEDETECT 14
+TMR2_OS_STARTS_ERSFALLINGEDGEDETECT 15
+TMR2_OS_STARTS_TMRON_ERSHIGH 22
+TMR2_OS_STARTS_TMRON_ERSLOW 23
+TMR2_MS_STARTS_TMRON_ERSRISINGEDGEDETECT 17
+TMR2_MS_STARTS_TMRON_ERSFALLINGEDGEDETECT 18
+TMR2_MS_STARTS_TMRON_ERSBOTHEDGE 19
+]
+"103
+[e E7721 . `uc
+TMR2_T2INPPS 0
+TMR2_CCP1_OUT 1
+TMR2_CCP2_OUT 2
+TMR2_PWM3_OUT 3
+TMR2_PWM4_OUT 4
+TMR2_PWM5_OUT 5
+TMR2_PWM6_OUT 6
+TMR2_C1_OUT_SYNC 7
+TMR2_C2_OUT_SYNC 8
+TMR2_ZCD_OUTPUT 9
+TMR2_CLC1_OUT 10
+TMR2_CLC2_OUT 11
+TMR2_CLC3_OUT 12
+TMR2_CLC4_OUT 13
+]
+"86 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/adc.c
+[e E7703 . `uc
+channel_ANA0 0
+channel_ANA2 2
+channel_ANA4 4
+channel_AVSS 59
+channel_Temp 60
+channel_DAC1 61
+channel_FVR_BUF1 62
+channel_FVR_BUF2 63
+]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
+"86 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 3 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+"51 D:\Github\Microchip\Mcc_15325\Mcc15325.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"67 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+"142 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/examples/i2c1_master_example.c
+[v _rd1RegCompleteHandler rd1RegCompleteHandler `(E97  1 s 1 rd1RegCompleteHandler ]
+"149
+[v _rd2RegCompleteHandler rd2RegCompleteHandler `(E97  1 s 1 rd2RegCompleteHandler ]
+"156
+[v _wr1RegCompleteHandler wr1RegCompleteHandler `(E97  1 s 1 wr1RegCompleteHandler ]
+"163
+[v _wr2RegCompleteHandler wr2RegCompleteHandler `(E97  1 s 1 wr2RegCompleteHandler ]
+"170
+[v _rdBlkRegCompleteHandler rdBlkRegCompleteHandler `(E97  1 s 1 rdBlkRegCompleteHandler ]
+"167 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+"176
+[v _I2C1_Open I2C1_Open `(E92  1 e 1 0 ]
+"209
+[v _I2C1_Close I2C1_Close `(E92  1 e 1 0 ]
+"224
+[v _I2C1_MasterOperation I2C1_MasterOperation `(E92  1 e 1 0 ]
+"246
+[v _I2C1_MasterRead I2C1_MasterRead `(E92  1 e 1 0 ]
+"251
+[v _I2C1_MasterWrite I2C1_MasterWrite `(E92  1 e 1 0 ]
+"263
+[v _I2C1_SetBuffer I2C1_SetBuffer `(v  1 e 1 0 ]
+"273
+[v _I2C1_SetDataCompleteCallback I2C1_SetDataCompleteCallback `(v  1 e 1 0 ]
+"283
+[v _I2C1_SetAddressNackCallback I2C1_SetAddressNackCallback `(v  1 e 1 0 ]
+"298
+[v _I2C1_SetCallback I2C1_SetCallback `(v  1 s 1 I2C1_SetCallback ]
+"312
+[v _I2C1_Poller I2C1_Poller `(v  1 s 1 I2C1_Poller ]
+"321
+[v _I2C1_MasterFsm I2C1_MasterFsm `T(v  1 s 1 I2C1_MasterFsm ]
+"333
+[v _I2C1_DO_IDLE I2C1_DO_IDLE `(E7816  1 s 1 I2C1_DO_IDLE ]
+"340
+[v _I2C1_DO_SEND_ADR_READ I2C1_DO_SEND_ADR_READ `(E7816  1 s 1 I2C1_DO_SEND_ADR_READ ]
+"347
+[v _I2C1_DO_SEND_ADR_WRITE I2C1_DO_SEND_ADR_WRITE `(E7816  1 s 1 I2C1_DO_SEND_ADR_WRITE ]
+"354
+[v _I2C1_DO_TX I2C1_DO_TX `(E7816  1 s 1 I2C1_DO_TX ]
+"378
+[v _I2C1_DO_RX I2C1_DO_RX `(E7816  1 s 1 I2C1_DO_RX ]
+"402
+[v _I2C1_DO_RCEN I2C1_DO_RCEN `(E7816  1 s 1 I2C1_DO_RCEN ]
+"409
+[v _I2C1_DO_TX_EMPTY I2C1_DO_TX_EMPTY `(E7816  1 s 1 I2C1_DO_TX_EMPTY ]
+"450
+[v _I2C1_DO_SEND_RESTART_READ I2C1_DO_SEND_RESTART_READ `(E7816  1 s 1 I2C1_DO_SEND_RESTART_READ ]
+"456
+[v _I2C1_DO_SEND_RESTART_WRITE I2C1_DO_SEND_RESTART_WRITE `(E7816  1 s 1 I2C1_DO_SEND_RESTART_WRITE ]
+"463
+[v _I2C1_DO_SEND_RESTART I2C1_DO_SEND_RESTART `(E7816  1 s 1 I2C1_DO_SEND_RESTART ]
+"469
+[v _I2C1_DO_SEND_STOP I2C1_DO_SEND_STOP `(E7816  1 s 1 I2C1_DO_SEND_STOP ]
+"475
+[v _I2C1_DO_RX_ACK I2C1_DO_RX_ACK `(E7816  1 s 1 I2C1_DO_RX_ACK ]
+"482
+[v _I2C1_DO_RX_NACK_STOP I2C1_DO_RX_NACK_STOP `(E7816  1 s 1 I2C1_DO_RX_NACK_STOP ]
+"488
+[v _I2C1_DO_RX_NACK_RESTART I2C1_DO_RX_NACK_RESTART `(E7816  1 s 1 I2C1_DO_RX_NACK_RESTART ]
+"494
+[v _I2C1_DO_RESET I2C1_DO_RESET `(E7816  1 s 1 I2C1_DO_RESET ]
+"500
+[v _I2C1_DO_ADDRESS_NACK I2C1_DO_ADDRESS_NACK `(E7816  1 s 1 I2C1_DO_ADDRESS_NACK ]
+"520
+[v _I2C1_CallbackReturnStop I2C1_CallbackReturnStop `(E97  1 e 1 0 ]
+"525
+[v _I2C1_CallbackReturnReset I2C1_CallbackReturnReset `(E97  1 e 1 0 ]
+"543
+[v _I2C1_MasterOpen I2C1_MasterOpen `T(uc  1 s 1 I2C1_MasterOpen ]
+"557
+[v _I2C1_MasterClose I2C1_MasterClose `T(v  1 s 1 I2C1_MasterClose ]
+"563
+[v _I2C1_MasterGetRxData I2C1_MasterGetRxData `T(uc  1 s 1 I2C1_MasterGetRxData ]
+"568
+[v _I2C1_MasterSendTxData I2C1_MasterSendTxData `T(v  1 s 1 I2C1_MasterSendTxData ]
+"573
+[v _I2C1_MasterEnableRestart I2C1_MasterEnableRestart `T(v  1 s 1 I2C1_MasterEnableRestart ]
+"578
+[v _I2C1_MasterDisableRestart I2C1_MasterDisableRestart `T(v  1 s 1 I2C1_MasterDisableRestart ]
+"583
+[v _I2C1_MasterStartRx I2C1_MasterStartRx `T(v  1 s 1 I2C1_MasterStartRx ]
+"588
+[v _I2C1_MasterStart I2C1_MasterStart `T(v  1 s 1 I2C1_MasterStart ]
+"593
+[v _I2C1_MasterStop I2C1_MasterStop `T(v  1 s 1 I2C1_MasterStop ]
+"598
+[v _I2C1_MasterIsNack I2C1_MasterIsNack `T(uc  1 s 1 I2C1_MasterIsNack ]
+"603
+[v _I2C1_MasterSendAck I2C1_MasterSendAck `T(v  1 s 1 I2C1_MasterSendAck ]
+"609
+[v _I2C1_MasterSendNack I2C1_MasterSendNack `T(v  1 s 1 I2C1_MasterSendNack ]
+"615
+[v _I2C1_MasterClearBusCollision I2C1_MasterClearBusCollision `T(v  1 s 1 I2C1_MasterClearBusCollision ]
+"625
+[v _I2C1_MasterEnableIrq I2C1_MasterEnableIrq `T(v  1 s 1 I2C1_MasterEnableIrq ]
+"635
+[v _I2C1_MasterDisableIrq I2C1_MasterDisableIrq `T(v  1 s 1 I2C1_MasterDisableIrq ]
+"640
+[v _I2C1_MasterClearIrq I2C1_MasterClearIrq `T(v  1 s 1 I2C1_MasterClearIrq ]
+"645
+[v _I2C1_MasterSetIrq I2C1_MasterSetIrq `T(v  1 s 1 I2C1_MasterSetIrq ]
+"650
+[v _I2C1_MasterWaitForEvent I2C1_MasterWaitForEvent `T(v  1 s 1 I2C1_MasterWaitForEvent ]
+"52 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+"50 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+"61
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+"77
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+"58 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/memory.c
+[v _FLASH_ReadWord FLASH_ReadWord `(ui  1 e 2 0 ]
+"94
+[v _FLASH_WriteBlock FLASH_WriteBlock `(c  1 e 1 0 ]
+"149
+[v _FLASH_EraseBlock FLASH_EraseBlock `(v  1 e 1 0 ]
+"55 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+"58 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+"72
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+"64 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+"114
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+"119
+[v _TMR2_Stop TMR2_Stop `(v  1 e 1 0 ]
+"130
+[v _TMR2_Counter8BitGet TMR2_Counter8BitGet `(uc  1 e 1 0 ]
+"144
+[v _TMR2_Counter8BitSet TMR2_Counter8BitSet `(v  1 e 1 0 ]
+"155
+[v _TMR2_Period8BitSet TMR2_Period8BitSet `(v  1 e 1 0 ]
+"165
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+"183
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+"193
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+"197
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+"30 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/APP/Led.c
+[v _BreathLedControl BreathLedControl `(v  1 e 1 0 ]
+"35
+[v _Led2_PWM Led2_PWM `(v  1 e 1 0 ]
+"32 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/COS/COS_Main.c
+[v _COS_Init COS_Init `(v  1 e 1 0 ]
+"68
+[v _COS_TimerSetup COS_TimerSetup `(v  1 e 1 0 ]
+"92
+[v _COS_TmrHandler COS_TmrHandler `(v  1 e 1 0 ]
+"133
+[v _COS_TskMan COS_TskMan `(v  1 e 1 0 ]
+[s S198 . 1 `uc 1 INTEDG 1 0 :1:0 
+`uc 1 . 1 0 :5:1 
+`uc 1 PEIE 1 0 :1:6 
+`uc 1 GIE 1 0 :1:7 
+]
+"424 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f15325.h
+[u S203 . 1 `S198 1 . 1 0 ]
+[v _INTCONbits INTCONbits `VES203  1 e 1 @11 ]
+"544
+[v _TRISA TRISA `VEuc  1 e 1 @18 ]
+"589
+[v _TRISC TRISC `VEuc  1 e 1 @20 ]
+"639
+[v _LATA LATA `VEuc  1 e 1 @24 ]
+"684
+[v _LATC LATC `VEuc  1 e 1 @26 ]
+"741
+[v _ADRESL ADRESL `VEuc  1 e 1 @155 ]
+"811
+[v _ADRESH ADRESH `VEuc  1 e 1 @156 ]
+"881
+[v _ADCON0 ADCON0 `VEuc  1 e 1 @157 ]
+[s S1322 . 1 `uc 1 ADON 1 0 :1:0 
+`uc 1 GOnDONE 1 0 :1:1 
+`uc 1 CHS0 1 0 :1:2 
+`uc 1 CHS1 1 0 :1:3 
+`uc 1 CHS2 1 0 :1:4 
+`uc 1 CHS3 1 0 :1:5 
+`uc 1 CHS4 1 0 :1:6 
+`uc 1 CHS5 1 0 :1:7 
+]
+"902
+[s S1331 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 CHS 1 0 :6:2 
+]
+[u S1334 . 1 `S1322 1 . 1 0 `S1331 1 . 1 0 ]
+[v _ADCON0bits ADCON0bits `VES1334  1 e 1 @157 ]
+"952
+[v _ADCON1 ADCON1 `VEuc  1 e 1 @158 ]
+"1915
+[v _SSP1BUF SSP1BUF `VEuc  1 e 1 @396 ]
+"1935
+[v _SSP1ADD SSP1ADD `VEuc  1 e 1 @397 ]
+"2125
+[v _SSP1STAT SSP1STAT `VEuc  1 e 1 @399 ]
+[s S665 . 1 `uc 1 BF 1 0 :1:0 
+`uc 1 UA 1 0 :1:1 
+`uc 1 R_nW 1 0 :1:2 
+`uc 1 S 1 0 :1:3 
+`uc 1 P 1 0 :1:4 
+`uc 1 D_nA 1 0 :1:5 
+`uc 1 CKE 1 0 :1:6 
+`uc 1 SMP 1 0 :1:7 
+]
+"2234
+[s S674 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A 1 0 :1:5 
+]
+[s S679 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA 1 0 :1:5 
+]
+[s S684 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS 1 0 :1:5 
+]
+[s S689 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 DATA_ADDRESS 1 0 :1:5 
+]
+[s S694 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ 1 0 :1:2 
+`uc 1 I2C_START 1 0 :1:3 
+`uc 1 I2C_STOP 1 0 :1:4 
+`uc 1 I2C_DAT 1 0 :1:5 
+]
+[s S700 . 1 `uc 1 BF1 1 0 :1:0 
+`uc 1 UA1 1 0 :1:1 
+`uc 1 R 1 0 :1:2 
+`uc 1 START 1 0 :1:3 
+`uc 1 STOP 1 0 :1:4 
+`uc 1 D 1 0 :1:5 
+`uc 1 CKE1 1 0 :1:6 
+`uc 1 SMP1 1 0 :1:7 
+]
+[s S709 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW 1 0 :1:2 
+`uc 1 START1 1 0 :1:3 
+`uc 1 STOP1 1 0 :1:4 
+`uc 1 DA 1 0 :1:5 
+]
+[s S715 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 RW1 1 0 :1:2 
+`uc 1 I2C_START1 1 0 :1:3 
+`uc 1 I2C_STOP2 1 0 :1:4 
+`uc 1 DA1 1 0 :1:5 
+]
+[s S721 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 I2C_READ1 1 0 :1:2 
+`uc 1 S2 1 0 :1:3 
+`uc 1 P2 1 0 :1:4 
+`uc 1 DATA_ADDRESS1 1 0 :1:5 
+]
+[s S727 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 READ_WRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_A1 1 0 :1:5 
+]
+[s S732 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_W1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 D_nA1 1 0 :1:5 
+]
+[s S737 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 R_nW1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 I2C_DAT1 1 0 :1:5 
+]
+[s S742 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nW2 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nA2 1 0 :1:5 
+]
+[s S747 . 1 `uc 1 . 1 0 :2:0 
+`uc 1 nWRITE1 1 0 :1:2 
+`uc 1 . 1 0 :2:3 
+`uc 1 nADDRESS1 1 0 :1:5 
+]
+[u S752 . 1 `S665 1 . 1 0 `S674 1 . 1 0 `S679 1 . 1 0 `S684 1 . 1 0 `S689 1 . 1 0 `S694 1 . 1 0 `S700 1 . 1 0 `S709 1 . 1 0 `S715 1 . 1 0 `S721 1 . 1 0 `S727 1 . 1 0 `S732 1 . 1 0 `S737 1 . 1 0 `S742 1 . 1 0 `S747 1 . 1 0 ]
+[v _SSP1STATbits SSP1STATbits `VES752  1 e 1 @399 ]
+"2489
+[v _SSP1CON1 SSP1CON1 `VEuc  1 e 1 @400 ]
+[s S399 . 1 `uc 1 SSPM 1 0 :4:0 
+`uc 1 CKP 1 0 :1:4 
+`uc 1 SSPEN 1 0 :1:5 
+`uc 1 SSPOV 1 0 :1:6 
+`uc 1 WCOL 1 0 :1:7 
+]
+"2519
+[s S405 . 1 `uc 1 SSPM0 1 0 :1:0 
+`uc 1 SSPM1 1 0 :1:1 
+`uc 1 SSPM2 1 0 :1:2 
+`uc 1 SSPM3 1 0 :1:3 
+]
+[s S410 . 1 `uc 1 SSPM01 1 0 :1:0 
+`uc 1 SSPM11 1 0 :1:1 
+`uc 1 SSPM21 1 0 :1:2 
+`uc 1 SSPM31 1 0 :1:3 
+`uc 1 CKP1 1 0 :1:4 
+`uc 1 SSPEN1 1 0 :1:5 
+`uc 1 SSPOV1 1 0 :1:6 
+`uc 1 WCOL1 1 0 :1:7 
+]
+[u S419 . 1 `S399 1 . 1 0 `S405 1 . 1 0 `S410 1 . 1 0 ]
+[v _SSP1CON1bits SSP1CON1bits `VES419  1 e 1 @400 ]
+"2609
+[v _SSP1CON2 SSP1CON2 `VEuc  1 e 1 @401 ]
+[s S569 . 1 `uc 1 SEN 1 0 :1:0 
+`uc 1 RSEN 1 0 :1:1 
+`uc 1 PEN 1 0 :1:2 
+`uc 1 RCEN 1 0 :1:3 
+`uc 1 ACKEN 1 0 :1:4 
+`uc 1 ACKDT 1 0 :1:5 
+`uc 1 ACKSTAT 1 0 :1:6 
+`uc 1 GCEN 1 0 :1:7 
+]
+"2656
+[s S578 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK 1 0 :5:1 
+]
+[s S581 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 ADMSK1 1 0 :1:1 
+`uc 1 ADMSK2 1 0 :1:2 
+`uc 1 ADMSK3 1 0 :1:3 
+`uc 1 ADMSK4 1 0 :1:4 
+`uc 1 ADMSK5 1 0 :1:5 
+]
+[s S588 . 1 `uc 1 SEN1 1 0 :1:0 
+`uc 1 ADMSK11 1 0 :1:1 
+`uc 1 ADMSK21 1 0 :1:2 
+`uc 1 ADMSK31 1 0 :1:3 
+`uc 1 ACKEN1 1 0 :1:4 
+`uc 1 ACKDT1 1 0 :1:5 
+`uc 1 ACKSTAT1 1 0 :1:6 
+`uc 1 GCEN1 1 0 :1:7 
+]
+[s S597 . 1 `uc 1 . 1 0 :1:0 
+`uc 1 RSEN1 1 0 :1:1 
+`uc 1 PEN1 1 0 :1:2 
+`uc 1 RCEN1 1 0 :1:3 
+`uc 1 ADMSK41 1 0 :1:4 
+`uc 1 ADMSK51 1 0 :1:5 
+]
+[u S604 . 1 `S569 1 . 1 0 `S578 1 . 1 0 `S581 1 . 1 0 `S588 1 . 1 0 `S597 1 . 1 0 ]
+[v _SSP1CON2bits SSP1CON2bits `VES604  1 e 1 @401 ]
+"2865
+[v _TMR1L TMR1L `VEuc  1 e 1 @524 ]
+"3035
+[v _TMR1H TMR1H `VEuc  1 e 1 @525 ]
+"3155
+[v _T1CON T1CON `VEuc  1 e 1 @526 ]
+"3755
+[v _T2TMR T2TMR `VEuc  1 e 1 @652 ]
+"3760
+[v _TMR2 TMR2 `VEuc  1 e 1 @652 ]
+"3809
+[v _T2PR T2PR `VEuc  1 e 1 @653 ]
+"3814
+[v _PR2 PR2 `VEuc  1 e 1 @653 ]
+"3863
+[v _T2CON T2CON `VEuc  1 e 1 @654 ]
+[s S1195 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"3899
+[s S1199 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+]
+[s S1207 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+[s S1211 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+[u S1220 . 1 `S1195 1 . 1 0 `S1199 1 . 1 0 `S1207 1 . 1 0 `S1211 1 . 1 0 ]
+[v _T2CONbits T2CONbits `VES1220  1 e 1 @654 ]
+"4009
+[v _T2HLT T2HLT `VEuc  1 e 1 @655 ]
+[s S1096 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"4042
+[s S1101 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+[s S1107 . 1 `uc 1 T2MODE 1 0 :5:0 
+`uc 1 T2CKSYNC 1 0 :1:5 
+`uc 1 T2CKPOL 1 0 :1:6 
+`uc 1 T2PSYNC 1 0 :1:7 
+]
+[s S1112 . 1 `uc 1 T2MODE0 1 0 :1:0 
+`uc 1 T2MODE1 1 0 :1:1 
+`uc 1 T2MODE2 1 0 :1:2 
+`uc 1 T2MODE3 1 0 :1:3 
+`uc 1 T2MODE4 1 0 :1:4 
+]
+[u S1118 . 1 `S1096 1 . 1 0 `S1101 1 . 1 0 `S1107 1 . 1 0 `S1112 1 . 1 0 ]
+[v _T2HLTbits T2HLTbits `VES1118  1 e 1 @655 ]
+"4137
+[v _T2CLKCON T2CLKCON `VEuc  1 e 1 @656 ]
+"4217
+[v _T2RST T2RST `VEuc  1 e 1 @657 ]
+[s S1161 . 1 `uc 1 RSEL 1 0 :4:0 
+]
+"4242
+[s S1163 . 1 `uc 1 RSEL0 1 0 :1:0 
+`uc 1 RSEL1 1 0 :1:1 
+`uc 1 RSEL2 1 0 :1:2 
+`uc 1 RSEL3 1 0 :1:3 
+]
+[s S1168 . 1 `uc 1 T2RSEL 1 0 :4:0 
+]
+[s S1170 . 1 `uc 1 T2RSEL0 1 0 :1:0 
+`uc 1 T2RSEL1 1 0 :1:1 
+`uc 1 T2RSEL2 1 0 :1:2 
+`uc 1 T2RSEL3 1 0 :1:3 
+]
+[u S1175 . 1 `S1161 1 . 1 0 `S1163 1 . 1 0 `S1168 1 . 1 0 `S1170 1 . 1 0 ]
+[v _T2RSTbits T2RSTbits `VES1175  1 e 1 @657 ]
+"4781
+[v _PWM3DCL PWM3DCL `VEuc  1 e 1 @788 ]
+"4847
+[v _PWM3DCH PWM3DCH `VEuc  1 e 1 @789 ]
+"5017
+[v _PWM3CON PWM3CON `VEuc  1 e 1 @790 ]
+[s S646 . 1 `uc 1 SSP1IF 1 0 :1:0 
+`uc 1 BCL1IF 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IF 1 0 :1:4 
+`uc 1 RC1IF 1 0 :1:5 
+`uc 1 TX2IF 1 0 :1:6 
+`uc 1 RC2IF 1 0 :1:7 
+]
+"7877
+[u S654 . 1 `S646 1 . 1 0 ]
+[v _PIR3bits PIR3bits `VES654  1 e 1 @1807 ]
+[s S1045 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR2IF 1 0 :1:1 
+]
+"7923
+[u S1048 . 1 `S1045 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES1048  1 e 1 @1808 ]
+[s S856 . 1 `uc 1 SSP1IE 1 0 :1:0 
+`uc 1 BCL1IE 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 TX1IE 1 0 :1:4 
+`uc 1 RC1IE 1 0 :1:5 
+`uc 1 TX2IE 1 0 :1:6 
+`uc 1 RC2IE 1 0 :1:7 
+]
+"8166
+[u S864 . 1 `S856 1 . 1 0 ]
+[v _PIE3bits PIE3bits `VES864  1 e 1 @1817 ]
+[s S1054 . 1 `uc 1 TMR1IE 1 0 :1:0 
+`uc 1 TMR2IE 1 0 :1:1 
+]
+"8212
+[u S1057 . 1 `S1054 1 . 1 0 ]
+[v _PIE4bits PIE4bits `VES1057  1 e 1 @1818 ]
+"8340
+[v _PMD0 PMD0 `VEuc  1 e 1 @1942 ]
+"8385
+[v _PMD1 PMD1 `VEuc  1 e 1 @1943 ]
+"8433
+[v _PMD2 PMD2 `VEuc  1 e 1 @1944 ]
+"8478
+[v _PMD3 PMD3 `VEuc  1 e 1 @1945 ]
+"8528
+[v _PMD4 PMD4 `VEuc  1 e 1 @1946 ]
+"8568
+[v _PMD5 PMD5 `VEuc  1 e 1 @1947 ]
+"9258
+[v _NVMADRL NVMADRL `VEuc  1 e 1 @2074 ]
+"9320
+[v _NVMADRH NVMADRH `VEuc  1 e 1 @2075 ]
+"9383
+[v _NVMDATL NVMDATL `VEuc  1 e 1 @2076 ]
+"9445
+[v _NVMDATH NVMDATH `VEuc  1 e 1 @2077 ]
+[s S213 . 1 `uc 1 RD 1 0 :1:0 
+`uc 1 WR 1 0 :1:1 
+`uc 1 WREN 1 0 :1:2 
+`uc 1 WRERR 1 0 :1:3 
+`uc 1 FREE 1 0 :1:4 
+`uc 1 LWLO 1 0 :1:5 
+`uc 1 NVMREGS 1 0 :1:6 
+]
+"9511
+[u S221 . 1 `S213 1 . 1 0 ]
+[v _NVMCON1bits NVMCON1bits `VES221  1 e 1 @2078 ]
+"9551
+[v _NVMCON2 NVMCON2 `VEuc  1 e 1 @2079 ]
+"9636
+[v _OSCCON1 OSCCON1 `VEuc  1 e 1 @2189 ]
+"9776
+[v _OSCCON3 OSCCON3 `VEuc  1 e 1 @2191 ]
+"9816
+[v _OSCSTAT OSCSTAT `VEuc  1 e 1 @2192 ]
+"9873
+[v _OSCEN OSCEN `VEuc  1 e 1 @2193 ]
+"9924
+[v _OSCTUNE OSCTUNE `VEuc  1 e 1 @2194 ]
+"9982
+[v _OSCFRQ OSCFRQ `VEuc  1 e 1 @2195 ]
+"16571
+[v _SSP1CLKPPS SSP1CLKPPS `VEuc  1 e 1 @7877 ]
+"16629
+[v _SSP1DATPPS SSP1DATPPS `VEuc  1 e 1 @7878 ]
+"17241
+[v _RC0PPS RC0PPS `VEuc  1 e 1 @7968 ]
+"17285
+[v _RC1PPS RC1PPS `VEuc  1 e 1 @7969 ]
+"17329
+[v _RC2PPS RC2PPS `VEuc  1 e 1 @7970 ]
+"17373
+[v _RC3PPS RC3PPS `VEuc  1 e 1 @7971 ]
+"17505
+[v _ANSELA ANSELA `VEuc  1 e 1 @7992 ]
+"17550
+[v _WPUA WPUA `VEuc  1 e 1 @7993 ]
+"17600
+[v _ODCONA ODCONA `VEuc  1 e 1 @7994 ]
+"17645
+[v _SLRCONA SLRCONA `VEuc  1 e 1 @7995 ]
+"17690
+[v _INLVLA INLVLA `VEuc  1 e 1 @7996 ]
+"17890
+[v _ANSELC ANSELC `VEuc  1 e 1 @8014 ]
+"17940
+[v _WPUC WPUC `VEuc  1 e 1 @8015 ]
+"17990
+[v _ODCONC ODCONC `VEuc  1 e 1 @8016 ]
+"18040
+[v _SLRCONC SLRCONC `VEuc  1 e 1 @8017 ]
+"18090
+[v _INLVLC INLVLC `VEuc  1 e 1 @8018 ]
+"146 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/i2c1_master.c
+[v _fsmStateTable fsmStateTable `DC[16]*.37(E7816  1 e 32 0 ]
+[s S374 . 29 `[6]*.37(E97 1 callbackTable 12 0 `[6]*.1v 1 callbackPayload 6 12 `ui 1 time_out 2 18 `ui 1 time_out_value 2 20 `uc 1 address 1 22 `*.1uc 1 data_ptr 1 23 `ui 1 data_length 2 24 `E7816 1 state 1 26 `E92 1 error 1 27 `uc 1 addressNackCheck 1 28 :1:0 
+`uc 1 busy 1 28 :1:1 
+`uc 1 inUse 1 28 :1:2 
+`uc 1 bufferFree 1 28 :1:3 
+]
+"165
+[v _I2C1_Status I2C1_Status `S374  1 e 29 0 ]
+"58 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[v _TMR2_InterruptHandler TMR2_InterruptHandler `*.37(v  1 e 2 0 ]
+"24 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/APP/Led.c
+[v _counter counter `ui  1 s 2 counter ]
+"25
+[v _BreathState BreathState `uc  1 s 1 BreathState ]
+"27
+[v _dutyValue dutyValue `ui  1 s 2 dutyValue ]
+"13 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/COS/COS_Main.c
+[v _COS_tsk_ind COS_tsk_ind `uc  1 e 1 0 ]
+"14
+[v _COS_tsk_msk COS_tsk_msk `uc  1 e 1 0 ]
+"15
+[v _COS_tsk_ena COS_tsk_ena `uc  1 e 1 0 ]
+"18
+[v _COS_ms_tmr COS_ms_tmr `us  1 e 2 0 ]
+"19
+[v _COS_sec_tmr COS_sec_tmr `VEus  1 e 2 0 ]
+"20
+[v _COS_tsk_tmr COS_tsk_tmr `us  1 e 2 0 ]
+"21
+[v _COS_tcnt_val COS_tcnt_val `us  1 e 2 0 ]
+"22
+[v _COS_tcnt_lst COS_tcnt_lst `us  1 e 2 0 ]
+[s S39 . 3 `*.37(v 1 tptr 2 0 `uc 1 sched 1 2 ]
+"33 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/COS/COS_UserTskList.c
+[v _COS_tsk COS_tsk `DC[4]S39  1 e 12 0 ]
+"51 D:\Github\Microchip\Mcc_15325\Mcc15325.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"83
+} 0
+"114 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[v _TMR2_StartTimer TMR2_StartTimer `(v  1 e 1 0 ]
+{
+"117
+} 0
+"108
+[v _TMR2_Start TMR2_Start `(v  1 e 1 0 ]
+{
+"112
+} 0
+"50 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/mcc.c
+[v _SYSTEM_Initialize SYSTEM_Initialize `(v  1 e 1 0 ]
+{
+"59
+} 0
+"64 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[v _TMR2_Initialize TMR2_Initialize `(v  1 e 1 0 ]
+{
+"94
+} 0
+"193
+[v _TMR2_SetInterruptHandler TMR2_SetInterruptHandler `(v  1 e 1 0 ]
+{
+[v TMR2_SetInterruptHandler@InterruptHandler InterruptHandler `*.37(v  1 p 2 0 ]
+"195
+} 0
+"58 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/pwm3.c
+[v _PWM3_Initialize PWM3_Initialize `(v  1 e 1 0 ]
+{
+"70
+} 0
+"77 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/mcc.c
+[v _PMD_Initialize PMD_Initialize `(v  1 e 1 0 ]
+{
+"91
+} 0
+"55 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/pin_manager.c
+[v _PIN_MANAGER_Initialize PIN_MANAGER_Initialize `(v  1 e 1 0 ]
+{
+"112
+} 0
+"61 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/mcc.c
+[v _OSCILLATOR_Initialize OSCILLATOR_Initialize `(v  1 e 1 0 ]
+{
+"75
+} 0
+"167 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/i2c1_master.c
+[v _I2C1_Initialize I2C1_Initialize `(v  1 e 1 0 ]
+{
+"174
+} 0
+"67 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/adc.c
+[v _ADC_Initialize ADC_Initialize `(v  1 e 1 0 ]
+{
+"83
+} 0
+"133 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/COS/COS_Main.c
+[v _COS_TskMan COS_TskMan `(v  1 e 1 0 ]
+{
+"180
+} 0
+"15 C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+[v ___wmul __wmul `(ui  1 e 2 0 ]
+{
+"17
+[v ___wmul@product product `ui  1 a 2 4 ]
+"15
+[v ___wmul@multiplier multiplier `ui  1 p 2 0 ]
+[v ___wmul@multiplicand multiplicand `ui  1 p 2 2 ]
+"53
+} 0
+"30 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/APP/Led.c
+[v _BreathLedControl BreathLedControl `(v  1 e 1 0 ]
+{
+"33
+} 0
+"92 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/COS/COS_Main.c
+[v _COS_TmrHandler COS_TmrHandler `(v  1 e 1 0 ]
+{
+"94
+[v COS_TmrHandler@tempbyte2 tempbyte2 `uc  1 a 1 5 ]
+[v COS_TmrHandler@tempbyte1 tempbyte1 `uc  1 a 1 4 ]
+"122
+} 0
+"32
+[v _COS_Init COS_Init `(v  1 e 1 0 ]
+{
+"34
+[v COS_Init@tempbyte2 tempbyte2 `uc  1 a 1 4 ]
+[v COS_Init@tempbyte1 tempbyte1 `uc  1 a 1 3 ]
+"58
+} 0
+"68
+[v _COS_TimerSetup COS_TimerSetup `(v  1 e 1 0 ]
+{
+"79
+} 0
+"52 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/interrupt_manager.c
+[v _INTERRUPT_InterruptManager INTERRUPT_InterruptManager `II(v  1 e 1 0 ]
+{
+"70
+} 0
+"165 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[v _TMR2_ISR TMR2_ISR `(v  1 e 1 0 ]
+{
+"167
+[v TMR2_ISR@CountCallBack CountCallBack `VEui  1 s 2 CountCallBack ]
+"181
+} 0
+"183
+[v _TMR2_CallBack TMR2_CallBack `(v  1 e 1 0 ]
+{
+"191
+} 0
+"35 D:\Github\Microchip\Mcc_15325\Mcc15325.X\UserCode/APP/Led.c
+[v _Led2_PWM Led2_PWM `(v  1 e 1 0 ]
+{
+"87
+} 0
+"197 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/tmr2.c
+[v _TMR2_DefaultInterruptHandler TMR2_DefaultInterruptHandler `(v  1 e 1 0 ]
+{
+"200
+} 0
+"72 D:\Github\Microchip\Mcc_15325\Mcc15325.X\mcc_generated_files/pwm3.c
+[v _PWM3_LoadDutyValue PWM3_LoadDutyValue `(v  1 e 1 0 ]
+{
+[v PWM3_LoadDutyValue@dutyValue dutyValue `ui  1 p 2 0 ]
+"79
+} 0
