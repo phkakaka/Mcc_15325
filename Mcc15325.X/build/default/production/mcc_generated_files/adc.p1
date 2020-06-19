@@ -1,5 +1,5 @@
 Version 3.2 HI-TECH Software Intermediate Code
-[v F7726 `(v ~T0 @X0 0 tf ]
+[v F7729 `(v ~T0 @X0 0 tf ]
 "881 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f15325.h
 [v _ADCON0 `Vuc ~T0 @X0 0 e@157 ]
 "952
@@ -9,8 +9,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "811
 [v _ADRESH `Vuc ~T0 @X0 0 e@156 ]
 "86 mcc_generated_files/adc.c
-[c E7703 0 59 60 61 62 63 .. ]
-[n E7703 . channel_ANA0 channel_AVSS channel_Temp channel_DAC1 channel_FVR_BUF1 channel_FVR_BUF2  ]
+[c E7703 0 2 4 20 59 60 61 62 63 .. ]
+[n E7703 . channel_ANA0 channel_ANA2 channel_ANA4 channel_ANC4 channel_AVSS channel_Temp channel_DAC1 channel_FVR_BUF1 channel_FVR_BUF2  ]
 "887 C:\Program Files (x86)\Microchip\xc8\v1.45\include\pic16f15325.h
 [s S46 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S46 . ADON GOnDONE CHS0 CHS1 CHS2 CHS3 CHS4 CHS5 ]
@@ -7208,21 +7208,24 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;adc.h: 95: typedef enum
 [; ;adc.h: 96: {
 [; ;adc.h: 97: channel_ANA0 = 0x0,
-[; ;adc.h: 98: channel_AVSS = 0x3B,
-[; ;adc.h: 99: channel_Temp = 0x3C,
-[; ;adc.h: 100: channel_DAC1 = 0x3D,
-[; ;adc.h: 101: channel_FVR_BUF1 = 0x3E,
-[; ;adc.h: 102: channel_FVR_BUF2 = 0x3F
-[; ;adc.h: 103: } adc_channel_t;
-[; ;adc.h: 138: void ADC_Initialize(void);
-[; ;adc.h: 168: void ADC_SelectChannel(adc_channel_t channel);
-[; ;adc.h: 195: void ADC_StartConversion(void);
-[; ;adc.h: 227: bool ADC_IsConversionDone(void);
-[; ;adc.h: 260: adc_result_t ADC_GetConversionResult(void);
-[; ;adc.h: 290: adc_result_t ADC_GetConversion(adc_channel_t channel);
-[; ;adc.h: 318: void ADC_TemperatureAcquisitionDelay(void);
+[; ;adc.h: 98: channel_ANA2 = 0x2,
+[; ;adc.h: 99: channel_ANA4 = 0x4,
+[; ;adc.h: 100: channel_ANC4 = 0x14,
+[; ;adc.h: 101: channel_AVSS = 0x3B,
+[; ;adc.h: 102: channel_Temp = 0x3C,
+[; ;adc.h: 103: channel_DAC1 = 0x3D,
+[; ;adc.h: 104: channel_FVR_BUF1 = 0x3E,
+[; ;adc.h: 105: channel_FVR_BUF2 = 0x3F
+[; ;adc.h: 106: } adc_channel_t;
+[; ;adc.h: 141: void ADC_Initialize(void);
+[; ;adc.h: 171: void ADC_SelectChannel(adc_channel_t channel);
+[; ;adc.h: 198: void ADC_StartConversion(void);
+[; ;adc.h: 230: bool ADC_IsConversionDone(void);
+[; ;adc.h: 263: adc_result_t ADC_GetConversionResult(void);
+[; ;adc.h: 293: adc_result_t ADC_GetConversion(adc_channel_t channel);
+[; ;adc.h: 321: void ADC_TemperatureAcquisitionDelay(void);
 "61 mcc_generated_files/adc.c
-[v _ADC_InterruptHandler `*F7726 ~T0 @X0 1 e ]
+[v _ADC_InterruptHandler `*F7729 ~T0 @X0 1 e ]
 [; ;adc.c: 61: void (*ADC_InterruptHandler)(void);
 "67
 [v _ADC_Initialize `(v ~T0 @X0 1 ef ]

@@ -9603,6 +9603,9 @@ adc_result_t adcResult2;
 typedef enum
 {
 channel_ANA0 = 0x0,
+channel_ANA2 = 0x2,
+channel_ANA4 = 0x4,
+channel_ANC4 = 0x14,
 channel_AVSS = 0x3B,
 channel_Temp = 0x3C,
 channel_DAC1 = 0x3D,
@@ -9610,25 +9613,25 @@ channel_FVR_BUF1 = 0x3E,
 channel_FVR_BUF2 = 0x3F
 } adc_channel_t;
 
-# 138
+# 141
 void ADC_Initialize(void);
 
-# 168
+# 171
 void ADC_SelectChannel(adc_channel_t channel);
 
-# 195
+# 198
 void ADC_StartConversion(void);
 
-# 227
+# 230
 bool ADC_IsConversionDone(void);
 
-# 260
+# 263
 adc_result_t ADC_GetConversionResult(void);
 
-# 290
+# 293
 adc_result_t ADC_GetConversion(adc_channel_t channel);
 
-# 318
+# 321
 void ADC_TemperatureAcquisitionDelay(void);
 
 # 61 "mcc_generated_files/adc.c"
